@@ -1,0 +1,40 @@
+#markdown-column {
+  flex: 1;
+  margin: 16px 2px 4px 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#markdown-header {
+  background-color: #f3f3f3;
+  height: 24px;
+  margin: 0;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#markdown-header-title {
+  color: #808080;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#markdown-textarea {
+  border: 3px solid #f3f3f3;
+  border-right-width: 0;
+  flex: 1;
+  font-family: monospace;
+  font-size: 16px;
+  margin: 4px 0 0 0;
+  padding: 4px;
+  overflow-x: auto;
+  overflow-y: scroll;
+  resize: none;
+  white-space: pre;
+}

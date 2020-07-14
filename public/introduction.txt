@@ -1,0 +1,20 @@
+# Markdown Project
+
+This project includes a simplified Markdown parser along with a webpage built using React.
+
+## Features
+
+1. ### Lists
+
+   Lists can be ordered or unordered.
+
+   * Nesting is supported.
+
+2. ### Headers
+
+   Headers must be prefixed by /#{1,6}/.
+
+3. ### Paragraphs
+
+   Paragraphs are split by blank lines.
+   Line breaks within a paragraph are not supported.
