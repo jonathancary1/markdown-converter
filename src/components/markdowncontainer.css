@@ -1,6 +1,6 @@
 #markdown-column {
   flex: 1;
-  margin: 16px 2px 4px 16px;
+  margin: 16px 16px 8px 16px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -9,12 +9,12 @@
 
 #markdown-header {
   background-color: #f3f3f3;
-  height: 24px;
+  height: 32px;
   margin: 0;
   padding: 4px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -22,19 +22,32 @@
   color: #808080;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 #markdown-textarea {
   border: 3px solid #f3f3f3;
-  border-right-width: 0;
+  border-bottom-width: 0;
   flex: 1;
   font-family: monospace;
   font-size: 16px;
   margin: 4px 0 0 0;
   padding: 4px;
-  overflow-x: auto;
-  overflow-y: scroll;
+  min-height: 96px;
+  overflow-x: scroll;
+  overflow-y: hidden;
   resize: none;
   white-space: pre;
+}
+
+@media screen and (min-width: 992px) {
+  #markdown-column {
+    margin: 16px 4px 8px 16px;
+  }
+
+  #markdown-textarea {
+    min-height: 0;
+    border-right-width: 0;
+    overflow-y: scroll;
+  }
 }

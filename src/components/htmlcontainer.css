@@ -1,7 +1,7 @@
 #html-column {
   min-width: 0;
   flex: 1;
-  margin: 16px 16px 4px 2px;
+  margin: 8px 16px 16px 16px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -10,12 +10,12 @@
 
 #html-header {
   background-color: #f3f3f3;
-  height: 24px;
+  height: 32px;
   margin: 0;
   padding: 4px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -23,37 +23,57 @@
   color: #808080;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 #html-header-button {
   color: #808080;
-  width: 80px;
+  width: 112px;
+  padding: 0;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 #html-preview {
   border: 3px solid #f3f3f3;
-  border-right-width: 0;
   flex: 1;
   font-family: sans-serif;
   margin: 4px 0 0 0;
   padding: 4px;
+  min-height: 96px;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 #html-code {
   border: 3px solid #f3f3f3;
-  border-right-width: 0;
+  border-bottom-width: 0;
   flex: 1;
   font-family: monospace;
   font-size: 16px;
   margin: 4px 0 0 0;
   padding: 4px;
-  overflow-x: auto;
-  overflow-y: scroll;
+  min-height: 96px;
+  overflow-x: scroll;
+  overflow-y: hidden;
   white-space: pre;
+}
+
+@media screen and (min-width: 992px) {
+  #html-column {
+    margin: 16px 16px 8px 4px;
+  }
+
+  #html-code {
+    min-height: 0;
+    border-right-width: 0;
+    overflow-y: scroll;
+  }
+
+  #html-preview {
+    min-height: 0;
+    border-right-width: 0;
+    overflow-y: scroll;
+  }
 }
