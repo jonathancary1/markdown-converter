@@ -1,4 +1,6 @@
 #html-column {
+  border-radius: 4px;
+  box-shadow: 0 0 4px #a9a9a9;
   min-width: 0;
   flex: 1;
   margin: 8px 16px 16px 16px;
@@ -10,6 +12,7 @@
 
 #html-header {
   background-color: #f3f3f3;
+  border-radius: 4px 4px 0 0;
   height: 32px;
   margin: 0;
   padding: 4px;
@@ -39,7 +42,7 @@
   border: 3px solid #f3f3f3;
   flex: 1;
   font-family: sans-serif;
-  margin: 4px 0 0 0;
+  margin: 0;
   padding: 4px;
   min-height: 96px;
   overflow-x: hidden;
@@ -48,11 +51,10 @@
 
 #html-code {
   border: 3px solid #f3f3f3;
-  border-bottom-width: 0;
   flex: 1;
   font-family: monospace;
   font-size: 16px;
-  margin: 4px 0 0 0;
+  margin: 0;
   padding: 4px;
   min-height: 96px;
   overflow-x: scroll;
@@ -67,13 +69,11 @@
 
   #html-code {
     min-height: 0;
-    border-right-width: 0;
     overflow-y: scroll;
   }
 
   #html-preview {
     min-height: 0;
-    border-right-width: 0;
     overflow-y: scroll;
   }
 }
